@@ -4,6 +4,7 @@ import {
   Text,
   TouchableOpacity,
   StyleSheet,
+  ImageBackground
 } from 'react-native';
 
 import CameraRoll, { save } from "@react-native-community/cameraroll";
@@ -15,6 +16,7 @@ import { savePhoto } from "../actionCreators/actions";
 const ScreenCamera = (props) => {
   const {savePhoto} = props;
   const camRef = useRef();
+  
 
   const takePicture = async () => {
     if (camRef.current) {
